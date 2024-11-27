@@ -20,6 +20,39 @@
     cursor: pointer;
   }
 
+/* Image Holder Styling */
+.img-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px; /* Fixed width for consistent design */
+  height: 300px; /* Fixed height for square holder */
+  margin: 20px auto; /* Center horizontally */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensure the image doesn't exceed the holder */
+  background: linear-gradient(135deg, #f4f4f4, #eaeaea); /* Subtle gradient background */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Image Styling */
+.img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image scales and crops proportionally */
+  transition: transform 0.3s ease; /* Add smooth hover effect */
+}
+
+/* Hover Effects */
+.img-holder:hover {
+  transform: scale(1.05); /* Slightly enlarge the holder */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+.img-holder:hover img {
+  transform: scale(1.1); /* Slight zoom for the image */
+}
+
 
 
 .img3d {
